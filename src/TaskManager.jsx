@@ -3,7 +3,6 @@ import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 
 function TaskManager() {
-  // Initialize state from localStorage or empty array if no stored tasks
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
     return savedTasks ? JSON.parse(savedTasks) : [];
